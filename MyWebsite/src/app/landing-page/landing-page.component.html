@@ -1,0 +1,95 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <div class="col-mt-3 col-sm-3 col-3">
+            <div class="logo">
+                <img  src="../../assets/shop.png" type="icon" width="50px" height="50px" >
+            </div>
+
+        </div>
+      <a class="navbar-brand" href="#">Shoe Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <button class="nav-link" (click)="goToHome()">Home</button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about-us">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Welcome to our Shoe Store!</h1>
+      
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Shop Now</a> -->
+    </div>
+  </div>
+
+<!-- Carousel -->
+  
+  <div class="carousel-container">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../assets/shoe_shop1.jpeg" style="height: 450px; " class="d-block w-100 carousel-image" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../assets/shoe_shop2.jpg" style="height: 450px;"  class="d-block w-100 carousel-image" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../assets/shoe_shop3.jpg" style="height: 450px;"  class="d-block w-100 carousel-image" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+  
+<!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>About Us</h3>
+            <p>Welcome to our shoe website, where we offer a wide range of stylish and comfortable footwear for all occasions. Our mission is to provide high-quality shoes that combine fashion, comfort, and durability.</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Shipping &amp; Returns</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Stay Connected</h3>
+            <p>Follow us on social media to stay updated with the latest news, offers, and trends in the world of footwear.</p>
+            <ul class="social-media">
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="text-center">&copy; 2023 Your Shoe Website. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>

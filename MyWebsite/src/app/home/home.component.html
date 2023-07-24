@@ -1,0 +1,119 @@
+
+  <!--Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <div class="col-mt-3 col-sm-3 col-3">
+            <div class="logo">
+                <img  src="../../assets/shop.png" type="icon" width="50px" height="50px" >
+            </div>
+
+        </div>
+      <a class="navbar-brand" href="#">Shoe Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <button class="nav-link" (click)="goToHome()">Home</button>
+          </li>
+         
+          <!-- <li *ngFor="let category of categories"  class="category-list"> -->
+            
+       
+            <div class="dropdown">
+              <button class=" dropdown-toggle" type="button" data-toggle="dropdown">
+                Category
+              </button>
+              <ul class="dropdown-menu">
+                <li *ngFor="let category of categories">
+                  <a class="dropdown-item" href="#">{{ category }}</a>
+                </li>
+              </ul>
+            </div>
+      
+          
+         
+        </ul>
+
+        <ul  class="navbar-nav ml-auto ">
+           
+                <li class="nav-item"  >
+                    <div style="margin-left: 400px;">
+                    <button class=" btn btn-success " (click)="goToLogin()">Login</button>
+                    
+                    </div>
+                </li> 
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  
+
+  <h2 class="lead">Browse our wide selection of shoes and find your perfect fit.</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../../assets/shoe7.jpg" class="card-img-top" alt="Shoe 1">
+          <div class="card-body">
+            <h5 class="card-title">Shoe 1</h5>
+            <p class="card-text">
+                NIKE
+                Unisex Literide Clog Running Shoes<br>
+                    <b>₹3,897</b>
+                MRP₹5,995 (35% OFF)<br>
+                Price inclusive of all taxes
+            </p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+            <a href="#" class="btn btn-warning ms-3">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../../assets/shoe2.jpg" class="card-img-top" alt="Shoe 2">
+          <div class="card-body">
+            <h5 class="card-title">Shoe 2</h5>
+            <p class="card-text">
+                NIKE
+            Hybrid Fuego Running Shoes<br>
+                    <b>₹3,120</b>
+            MRP₹6,499 (52% OFF)<br>
+            Price inclusive of all taxes
+            </p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+            <a href="#" class="btn btn-warning ms-3">Add to Cart</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../../assets/shoe3.jpg" class="card-img-top" alt="Shoe 3">
+          <div class="card-body">
+            <h5 class="card-title">Shoe 3</h5>
+            <p class="card-text">
+                NIKE
+                Men Black Quest 4 Running Shoes<br>
+                <b>₹4,196</b>
+                MRP₹5,995 (30% OFF)<br>
+                Price inclusive of all taxes
+                </p>
+            <a href="#" class="btn btn-success ">Buy Now</a>
+            
+            <a href="#" class="btn btn-warning ms-3">Add to Cart</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  
+
